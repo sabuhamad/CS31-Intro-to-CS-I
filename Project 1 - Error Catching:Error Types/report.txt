@@ -1,0 +1,13 @@
+﻿Sari Abu-Hamad
+4/5/2022
+CS31: Project 1
+Professor Smallberg
+
+
+In step 5, I inputted 5 total students with 5 preferring the quarter system and 10 preferring the semester system. This led to nonsensical output of 100% of students surveyed preferring the quarter system and 200% preferring the semester system which is illogical.
+
+
+In step 6, the logic error I introduced to logic_error.cpp was in the math of calculating the percentage of the students’ preferences. Instead of multiplying 100% by the number of students that preferred the semester system divided by the total number of students surveyed, there was a logic error in this calculation which could be caused by a typo or by mistaking the correct math required where it was multiplied by 200% instead of 100%. This would give a logic error in the final statement as the percentage displayed for the number of students surveyed as preferring semesters is double the number it actually is. Therefore, although the percentage of the students that prefer the semester system may be higher (due to it being calculated as 2x how much it actually should be), the final comparison of # of students in the if statement takes into account the actual number of students as opposed to the percentages and could lead to the quarter system being displayed as the overall preferred system although the percentages indicate the semester system is preferred. Furthermore, the 2 percentages displayed, which should sum to 100%, do not end up summing to 100%.
+
+
+In step 7, the compile errors I introduced to compile_error.cpp were in both the declaration of the int variables and the initial cout statement asking how many students were surveyed. The initial compilation error was due to the variable “preferSemester” being misspelled as “preferSemster” in line 18. The second error that caused an error in the compiler was a syntax error in which I removed a semicolon at the end of the first cout statement asking "How many students were surveyed? " as this is improper syntax in line 13.
